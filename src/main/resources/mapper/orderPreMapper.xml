@@ -13,7 +13,7 @@
                    #{orderId, jdbcType=NUMERIC},
                    #{orderType, jdbcType=VARCHAR},
                    #{orderDes, jdbcType=VARCHAR},
-                   #{orderDep, jdbcType=INTEGER}
+                   #{orderDep, jdbcType=VARCHAR}
                )
     </insert>
 

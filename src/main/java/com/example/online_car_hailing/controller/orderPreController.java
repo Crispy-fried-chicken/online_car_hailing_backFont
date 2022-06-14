@@ -22,6 +22,7 @@ public class orderPreController {
     @DeleteMapping("/Delete")
     @ResponseBody
     public BaseResponse deleteById(@RequestParam("orderId") int orderId){
+        System.out.println(orderPreMapper.deleteById(orderId));
         return BaseResponse.success(orderPreMapper.deleteById(orderId));
     }
 

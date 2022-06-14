@@ -4,11 +4,12 @@ create table cridehailing_drivers
     DWID    char(18)    not null
         primary key,
     Dtel    char(11)    null,
-    account char(10)    null,
-    passwd  char(20)    null,
+    account varchar(20)    null,
+    passwd  varchar(255)    null,
     DName   varchar(22) not null,
-    DStar   int         null,
-    DCar    varchar(20) null,
+    DStar   int         not null,
+    DCar    varchar(20) not null,
+    DCarNum    varchar(20) not null,
     constraint DCar
         unique (DCar)
 );
@@ -18,8 +19,8 @@ create table cridehailing_passengers
 (
     UID     char(18)    not null
         primary key,
-    account char(10)    not null,
-    passwd  char(20)    not null,
+    account varchar(20)    not null,
+    passwd  varchar(255)    not null,
     tel     char(11)    not null,
     UName   varchar(20) not null,
     UCredit int         not null
