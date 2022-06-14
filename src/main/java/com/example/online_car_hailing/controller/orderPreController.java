@@ -20,8 +20,17 @@ public class orderPreController {
     }
 
     @DeleteMapping("/Delete")
-    public boolean deleteById(@RequestBody int id){
-        return orderPreMapper.deleteById(id);
+    @ResponseBody
+    public BaseResponse deleteById(@RequestParam("orderId") int orderId){
+        return BaseResponse.success(orderPreMapper.deleteById(orderId));
+    }
+
+    @PostMapping("/insert")
+    @ResponseBody
+    public BaseResponse insertRecord(orderPre orderPre){
+        System.out.println(orderPre);
+        return BaseResponse.success(orderPreMapper.insertRecord(orderPre));
+//        return BaseResponse.success(true);
     }
 
 }

@@ -24,7 +24,7 @@
 </select>
 
     <delete id="deleteById" parameterType="com.example.online_car_hailing.bean.orderPre">
-            DELETE *
+            DELETE
             FROM se_ridehailing.cridehailing_orderpre
             WHERE orderId = #{orderId,jdbcType=NUMERIC}
     </delete>
