@@ -13,5 +13,5 @@ public interface orderPreMapper {
 
     boolean insertRecord(orderPre orderPre);
 
-    boolean deleteById(int id);
+    boolean deleteById(int orderId);
 }
