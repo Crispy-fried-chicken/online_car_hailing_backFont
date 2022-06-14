@@ -13,5 +13,7 @@ public interface orderDescriptionMapper {
 
     boolean insertRecord(orderDescription orderDescription);
 
-    orderDescription searchById(int id);
+    List<orderDescription> searchById(String id);
+
+    List<orderDescription> searchByDate(String date);
 }
