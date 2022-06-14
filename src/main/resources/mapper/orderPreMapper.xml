@@ -16,4 +16,16 @@
                    #{orderDep, jdbcType=INTEGER}
                )
     </insert>
+
+    <select id="selectById" parameterType="com.example.online_car_hailing.bean.orderPre">
+    SELECT *
+    FROM se_ridehailing.cridehailing_orderpre
+    WHERE orderId = #{orderId,jdbcType=NUMERIC}
+</select>
+
+    <delete id="deleteById" parameterType="com.example.online_car_hailing.bean.orderPre">
+            DELETE *
+            FROM se_ridehailing.cridehailing_orderpre
+            WHERE orderId = #{orderId,jdbcType=NUMERIC}
+    </delete>
 </mapper>

@@ -12,4 +12,6 @@ public interface orderPreMapper {
     List<orderPre> queryAll();
 
     boolean insertRecord(orderPre orderPre);
+
+    boolean deleteById(int id);
 }

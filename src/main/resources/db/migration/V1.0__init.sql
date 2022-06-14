@@ -110,5 +110,8 @@ create table cridehailing_accept
     constraint fk_acc_dept3
         foreign key (UID, AppointmentTime) references cridehailing_appointments (UID, AppointmentTime)
 );
-insert into cridehailing_orderpre values(1,'特惠快车','西南交通大学犀浦校区','天府软件园D区')
+insert into cridehailing_orderpre values(1,'特惠快车','天府软件园D区','西南交通大学犀浦校区');
+insert into cridehailing_orderpre values(2,'特惠快车','西南交通大学犀浦校区','季柳园-西南门');
+insert into cridehailing_orderpre values(3,'特惠快车','西南交通大学犀浦校区','成都东站');
+insert into cridehailing_orderpre values(4,'特惠快车','西南交通大学犀浦校区','犀浦-地铁站');
 
