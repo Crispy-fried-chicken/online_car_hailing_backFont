@@ -15,5 +15,5 @@ public interface orderDescriptionMapper {
 
     List<orderDescription> searchById(String id);
 
-    List<orderDescription> searchByDate(String date);
+//    List<orderDescription> searchByDate(String date);
 }

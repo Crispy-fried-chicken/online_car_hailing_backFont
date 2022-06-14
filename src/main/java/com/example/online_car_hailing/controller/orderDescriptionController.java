@@ -23,8 +23,8 @@ public class orderDescriptionController {
         return BaseResponse.success(orderDescriptionMapper.searchById(id));
     }
 
-    @RequestMapping("/search")
-    public BaseResponse searchByDate(@RequestParam("date") String date) {
-        return BaseResponse.success(orderDescriptionMapper.searchById(date));
-    }
+//    @RequestMapping("/search")
+//    public BaseResponse searchByDate(@RequestParam("date") String date) {
+//        return BaseResponse.success(orderDescriptionMapper.searchById(date));
+//    }
 }

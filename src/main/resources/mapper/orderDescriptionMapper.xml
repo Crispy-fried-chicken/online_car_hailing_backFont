@@ -12,9 +12,9 @@
         WHERE OID = #{orderid,jdbcType=CHAR}
     </select>
 
-    <select id="searchById" resultType="com.example.online_car_hailing.bean.orderDescription">
-        SELECT *
-        FROM se_ridehailing.cridehailing_order_description
-        WHERE OID = #{date,jdbcType=VARCHAR}
-    </select>
+<!--    <select id="searchById" resultType="com.example.online_car_hailing.bean.orderDescription">-->
+<!--        SELECT *-->
+<!--        FROM se_ridehailing.cridehailing_order_description-->
+<!--        WHERE OID = #{date,jdbcType=VARCHAR}-->
+<!--    </select>-->
 </mapper>
